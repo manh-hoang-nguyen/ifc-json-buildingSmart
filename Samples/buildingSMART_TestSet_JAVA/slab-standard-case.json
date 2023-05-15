@@ -1,0 +1,514 @@
+{
+  "type": "ifcJSON",
+  "version": "0.0.1",
+  "schemaIdentifier": "IFC4",
+  "originatingSystem": "IFC2JSON_python Version 0.0.1",
+  "preprocessorVersion": "IfcOpenShell v0.7.0-07ee62eb9",
+  "timeStamp": "2023-05-15T18:06:47",
+  "data": [
+    {
+      "type": "IfcBuilding",
+      "globalId": "c817fdd4-b1ca-46d5-a399-60c0e6a195c3",
+      "name": "IfcBuilding",
+      "objectPlacement": {
+        "type": "IfcLocalPlacement",
+        "relativePlacement": {
+          "type": "IfcAxis2Placement3D",
+          "location": {
+            "type": "IfcCartesianPoint",
+            "coordinates": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "compositionType": "ELEMENT",
+      "buildingAddress": {
+        "type": "IfcPostalAddress",
+        "region": "Unknown"
+      },
+      "decomposes": [
+        {
+          "type": "IfcRelAggregates",
+          "ref": "ef4076fd-8961-4aef-822b-ecbe6a7b0db3"
+        }
+      ],
+      "containsElements": [
+        {
+          "type": "IfcRelContainedInSpatialStructure",
+          "ref": "cb935b5c-10f5-49aa-85c9-884210bd795f"
+        }
+      ]
+    },
+    {
+      "type": "IfcProject",
+      "globalId": "d2780d94-37c8-42c0-a821-e76412c59244",
+      "ownerHistory": {
+        "type": "IfcOwnerHistory",
+        "ref": "674771ad-a4c8-46ba-a33b-ab7f1e91ddd1"
+      },
+      "name": "IfcProject",
+      "longName": "IfcProject",
+      "representationContexts": [
+        {
+          "type": "IfcGeometricRepresentationContext",
+          "ref": "ef5bdcd4-0a44-446c-9907-8e761ceac6b9"
+        }
+      ],
+      "unitsInContext": {
+        "type": "IfcUnitAssignment",
+        "units": [
+          {
+            "type": "IfcSIUnit",
+            "unitType": "LENGTHUNIT",
+            "prefix": "MILLI",
+            "name": "METRE",
+            "dimensions": {
+              "type": "IfcDimensionalExponents",
+              "LengthExponent": 1
+            }
+          },
+          {
+            "type": "IfcSIUnit",
+            "unitType": "PLANEANGLEUNIT",
+            "name": "RADIAN",
+            "dimensions": {
+              "type": "IfcDimensionalExponents"
+            }
+          },
+          {
+            "type": "IfcSIUnit",
+            "unitType": "TIMEUNIT",
+            "name": "SECOND",
+            "dimensions": {
+              "type": "IfcDimensionalExponents",
+              "TimeExponent": 1
+            }
+          }
+        ]
+      },
+      "isDecomposedBy": [
+        {
+          "type": "IfcRelAggregates",
+          "ref": "ef4076fd-8961-4aef-822b-ecbe6a7b0db3"
+        }
+      ]
+    },
+    {
+      "type": "IfcSlabType",
+      "globalId": "75d7f83b-f63d-48d8-94ca-acfac83bc427",
+      "name": "200mm Concrete",
+      "predefinedType": "FLOOR",
+      "hasAssociations": [
+        {
+          "type": "IfcRelAssociatesMaterial",
+          "ref": "dd248904-b7a3-4a5f-8f69-8d0942a8e711"
+        }
+      ],
+      "types": [
+        {
+          "type": "IfcRelDefinesByType",
+          "ref": "d33947bb-11f7-4bc7-aa40-8b5c4d02314e"
+        }
+      ]
+    },
+    {
+      "type": "IfcSlabStandardCase",
+      "globalId": "785190f0-6546-4d73-b6c9-f9620bcda4fd",
+      "objectPlacement": {
+        "type": "IfcLocalPlacement",
+        "relativePlacement": {
+          "type": "IfcAxis2Placement3D",
+          "location": {
+            "type": "IfcCartesianPoint",
+            "coordinates": [
+              0.0,
+              0.0,
+              -200.0
+            ]
+          },
+          "axis": {
+            "type": "IfcDirection",
+            "directionRatios": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "refDirection": {
+            "type": "IfcDirection",
+            "directionRatios": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "representation": {
+        "type": "IfcProductDefinitionShape",
+        "representations": [
+          {
+            "type": "IfcShapeRepresentation",
+            "ref": "7f39b2ca-4fb2-4c61-805b-4b6d20ff1be0"
+          }
+        ]
+      },
+      "hasAssociations": [
+        {
+          "type": "IfcRelAssociatesMaterial",
+          "ref": "c397ecf0-06fe-4246-be73-b9984a8599e0"
+        }
+      ],
+      "isTypedBy": [
+        {
+          "type": "IfcRelDefinesByType",
+          "ref": "d33947bb-11f7-4bc7-aa40-8b5c4d02314e"
+        }
+      ],
+      "containedInStructure": [
+        {
+          "type": "IfcRelContainedInSpatialStructure",
+          "ref": "cb935b5c-10f5-49aa-85c9-884210bd795f"
+        }
+      ]
+    },
+    {
+      "type": "IfcShapeRepresentation",
+      "contextOfItems": {
+        "type": "IfcGeometricRepresentationSubContext",
+        "ref": "41380228-192c-489c-af60-919152c5e7f8"
+      },
+      "representationIdentifier": "Body",
+      "representationType": "SweptSolid",
+      "items": [
+        {
+          "type": "IfcExtrudedAreaSolid",
+          "sweptArea": {
+            "type": "IfcArbitraryClosedProfileDef",
+            "profileType": "AREA",
+            "profileName": "Slab Perim",
+            "outerCurve": {
+              "type": "IfcIndexedPolyCurve",
+              "points": {
+                "type": "IfcCartesianPointList2D",
+                "coordList": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1000.0,
+                    0.0
+                  ],
+                  [
+                    1399.99999999987,
+                    2000.0
+                  ],
+                  [
+                    1000.0,
+                    4000.0
+                  ],
+                  [
+                    0.0,
+                    4000.0
+                  ],
+                  [
+                    -400.0,
+                    2000.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ]
+              },
+              "segments": [
+                {
+                  "type": "IfcLineIndex",
+                  "value": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "type": "IfcArcIndex",
+                  "value": [
+                    2,
+                    3,
+                    4
+                  ]
+                },
+                {
+                  "type": "IfcLineIndex",
+                  "value": [
+                    4,
+                    5
+                  ]
+                },
+                {
+                  "type": "IfcArcIndex",
+                  "value": [
+                    5,
+                    6,
+                    7
+                  ]
+                }
+              ],
+              "selfIntersect": false
+            }
+          },
+          "extrudedDirection": {
+            "type": "IfcDirection",
+            "directionRatios": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "depth": 200.0
+        }
+      ],
+      "ofProductRepresentation": [
+        {
+          "type": "IfcProductDefinitionShape",
+          "representations": [
+            {
+              "type": "IfcShapeRepresentation",
+              "ref": "7f39b2ca-4fb2-4c61-805b-4b6d20ff1be0"
+            }
+          ]
+        }
+      ],
+      "globalId": "7f39b2ca-4fb2-4c61-805b-4b6d20ff1be0"
+    },
+    {
+      "type": "IfcOwnerHistory",
+      "owningUser": {
+        "type": "IfcPersonAndOrganization",
+        "thePerson": {
+          "type": "IfcPerson",
+          "identification": "Jon",
+          "familyName": "Jon"
+        },
+        "theOrganization": {
+          "type": "IfcOrganization",
+          "name": "Geometry Gym Pty Ltd"
+        }
+      },
+      "owningApplication": {
+        "type": "IfcApplication",
+        "applicationDeveloper": {
+          "type": "IfcOrganization",
+          "name": "Geometry Gym Pty Ltd"
+        },
+        "version": "1.0.0.0",
+        "applicationFullName": "ggRhinoIFC - Geometry Gym Plug-in for Rhino3d",
+        "applicationIdentifier": "ggRhinoIFC"
+      },
+      "changeAction": "ADDED",
+      "lastModifiedDate": 1418084874,
+      "creationDate": 1418084874,
+      "globalId": "674771ad-a4c8-46ba-a33b-ab7f1e91ddd1"
+    },
+    {
+      "type": "IfcGeometricRepresentationContext",
+      "contextType": "Model",
+      "coordinateSpaceDimension": 3,
+      "precision": 0.0001,
+      "worldCoordinateSystem": {
+        "type": "IfcAxis2Placement3D",
+        "location": {
+          "type": "IfcCartesianPoint",
+          "coordinates": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "trueNorth": {
+        "type": "IfcDirection",
+        "directionRatios": [
+          0.0,
+          1.0
+        ]
+      },
+      "hasSubContexts": [
+        {
+          "type": "IfcGeometricRepresentationSubContext",
+          "ref": "f3ae757b-2add-4ae5-b4fa-d5e388306d5a"
+        },
+        {
+          "type": "IfcGeometricRepresentationSubContext",
+          "ref": "41380228-192c-489c-af60-919152c5e7f8"
+        }
+      ],
+      "globalId": "d952bc41-eee0-4d64-a394-f86e0105ffa8"
+    },
+    {
+      "type": "IfcGeometricRepresentationSubContext",
+      "contextIdentifier": "Axis",
+      "contextType": "Model",
+      "parentContext": {
+        "type": "IfcGeometricRepresentationContext",
+        "ref": "d952bc41-eee0-4d64-a394-f86e0105ffa8"
+      },
+      "targetView": "MODEL_VIEW",
+      "globalId": "f3ae757b-2add-4ae5-b4fa-d5e388306d5a"
+    },
+    {
+      "type": "IfcGeometricRepresentationSubContext",
+      "contextIdentifier": "Body",
+      "contextType": "Model",
+      "parentContext": {
+        "type": "IfcGeometricRepresentationContext",
+        "ref": "d952bc41-eee0-4d64-a394-f86e0105ffa8"
+      },
+      "targetView": "MODEL_VIEW",
+      "representationsInContext": [
+        {
+          "type": "IfcShapeRepresentation",
+          "ref": "7f39b2ca-4fb2-4c61-805b-4b6d20ff1be0"
+        }
+      ],
+      "globalId": "41380228-192c-489c-af60-919152c5e7f8"
+    },
+    {
+      "type": "IfcGeometricRepresentationContext",
+      "contextType": "Model",
+      "coordinateSpaceDimension": 3,
+      "precision": 0.0001,
+      "worldCoordinateSystem": {
+        "type": "IfcAxis2Placement3D",
+        "location": {
+          "type": "IfcCartesianPoint",
+          "coordinates": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "trueNorth": {
+        "type": "IfcDirection",
+        "directionRatios": [
+          0.0,
+          1.0
+        ]
+      },
+      "globalId": "ef5bdcd4-0a44-446c-9907-8e761ceac6b9"
+    },
+    {
+      "type": "IfcRelContainedInSpatialStructure",
+      "globalId": "cb935b5c-10f5-49aa-85c9-884210bd795f",
+      "name": "Building",
+      "description": "Building Container for Elements",
+      "relatedElements": [
+        {
+          "type": "IfcSlabStandardCase",
+          "ref": "785190f0-6546-4d73-b6c9-f9620bcda4fd"
+        }
+      ],
+      "relatingStructure": {
+        "type": "IfcBuilding",
+        "ref": "c817fdd4-b1ca-46d5-a399-60c0e6a195c3"
+      }
+    },
+    {
+      "type": "IfcRelAggregates",
+      "globalId": "ef4076fd-8961-4aef-822b-ecbe6a7b0db3",
+      "name": "Project Container",
+      "description": "Project Container for Buildings",
+      "relatingObject": {
+        "type": "IfcProject",
+        "ref": "d2780d94-37c8-42c0-a821-e76412c59244"
+      },
+      "relatedObjects": [
+        {
+          "type": "IfcBuilding",
+          "ref": "c817fdd4-b1ca-46d5-a399-60c0e6a195c3"
+        }
+      ]
+    },
+    {
+      "type": "IfcRelAssociatesMaterial",
+      "globalId": "dd248904-b7a3-4a5f-8f69-8d0942a8e711",
+      "name": "MatAssoc",
+      "description": "Material Associates",
+      "relatedObjects": [
+        {
+          "type": "IfcSlabType",
+          "ref": "75d7f83b-f63d-48d8-94ca-acfac83bc427"
+        }
+      ],
+      "relatingMaterial": {
+        "type": "IfcMaterialLayerSet",
+        "materialLayers": [
+          {
+            "type": "IfcMaterialLayer",
+            "material": {
+              "type": "IfcMaterial",
+              "name": "Concrete"
+            },
+            "layerThickness": 200.0,
+            "isVentilated": false,
+            "name": "Core"
+          }
+        ],
+        "layerSetName": "200mm Concrete"
+      }
+    },
+    {
+      "type": "IfcRelDefinesByType",
+      "globalId": "d33947bb-11f7-4bc7-aa40-8b5c4d02314e",
+      "name": "200mm Concrete",
+      "relatedObjects": [
+        {
+          "type": "IfcSlabStandardCase",
+          "ref": "785190f0-6546-4d73-b6c9-f9620bcda4fd"
+        }
+      ],
+      "relatingType": {
+        "type": "IfcSlabType",
+        "ref": "75d7f83b-f63d-48d8-94ca-acfac83bc427"
+      }
+    },
+    {
+      "type": "IfcRelAssociatesMaterial",
+      "globalId": "c397ecf0-06fe-4246-be73-b9984a8599e0",
+      "name": "MatAssoc",
+      "description": "Material Associates",
+      "relatedObjects": [
+        {
+          "type": "IfcSlabStandardCase",
+          "ref": "785190f0-6546-4d73-b6c9-f9620bcda4fd"
+        }
+      ],
+      "relatingMaterial": {
+        "type": "IfcMaterialLayerSetUsage",
+        "forLayerSet": {
+          "type": "IfcMaterialLayerSet",
+          "materialLayers": [
+            {
+              "type": "IfcMaterialLayer",
+              "material": {
+                "type": "IfcMaterial",
+                "name": "Concrete"
+              },
+              "layerThickness": 200.0,
+              "isVentilated": false,
+              "name": "Core"
+            }
+          ],
+          "layerSetName": "200mm Concrete"
+        },
+        "layerSetDirection": "AXIS3",
+        "directionSense": "POSITIVE",
+        "offsetFromReferenceLine": -200.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "type": "ifcJSON",
+  "version": "0.0.1",
+  "schemaIdentifier": "IFC4",
+  "originatingSystem": "IFC2JSON_python Version 0.0.1",
+  "preprocessorVersion": "IfcOpenShell v0.7.0-07ee62eb9",
+  "timeStamp": "2023-05-15T18:07:01",
+  "data": [
+    {
+      "type": "IfcProject",
+      "globalId": "3b7266e8-127d-4e31-a10d-59cd1eb671a7",
+      "ownerHistory": {
+        "type": "IfcOwnerHistory",
+        "ref": "e8b4fadc-0538-4856-8f80-53325a16f938"
+      },
+      "name": "proxy with swept solid",
+      "representationContexts": [
+        {
+          "type": "IfcGeometricRepresentationContext",
+          "ref": "63e93211-9574-40a5-a0f6-4ccd27ab1bce"
+        }
+      ],
+      "unitsInContext": {
+        "type": "IfcUnitAssignment",
+        "units": [
+          {
+            "type": "IfcSIUnit",
+            "unitType": "LENGTHUNIT",
+            "prefix": "MILLI",
+            "name": "METRE",
+            "dimensions": {
+              "type": "IfcDimensionalExponents",
+              "LengthExponent": 1
+            }
+          },
+          {
+            "type": "IfcConversionBasedUnit",
+            "dimensions": {
+              "type": "IfcDimensionalExponents",
+              "lengthExponent": 0,
+              "massExponent": 0,
+              "timeExponent": 0,
+              "electricCurrentExponent": 0,
+              "thermodynamicTemperatureExponent": 0,
+              "amountOfSubstanceExponent": 0,
+              "luminousIntensityExponent": 0
+            },
+            "unitType": "PLANEANGLEUNIT",
+            "name": "degree",
+            "conversionFactor": {
+              "type": "IfcMeasureWithUnit",
+              "valueComponent": {
+                "type": "IfcPlaneAngleMeasure",
+                "value": 0.017453293
+              },
+              "unitComponent": {
+                "type": "IfcSIUnit",
+                "unitType": "PLANEANGLEUNIT",
+                "name": "RADIAN",
+                "dimensions": {
+                  "type": "IfcDimensionalExponents"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "isDecomposedBy": [
+        {
+          "type": "IfcRelAggregates",
+          "ref": "a22f491f-f885-4116-8813-24d281d90c1d"
+        }
+      ]
+    },
+    {
+      "type": "IfcBuilding",
+      "globalId": "8f323372-d7b4-4d74-85d2-001ba786c219",
+      "name": "Test Building",
+      "objectPlacement": {
+        "type": "IfcLocalPlacement",
+        "relativePlacement": {
+          "type": "IfcAxis2Placement3D",
+          "location": {
+            "type": "IfcCartesianPoint",
+            "coordinates": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "compositionType": "ELEMENT",
+      "decomposes": [
+        {
+          "type": "IfcRelAggregates",
+          "ref": "a22f491f-f885-4116-8813-24d281d90c1d"
+        }
+      ],
+      "containsElements": [
+        {
+          "type": "IfcRelContainedInSpatialStructure",
+          "ref": "9dc7b8ee-7617-4022-8378-5b8ade78f5fc"
+        }
+      ]
+    },
+    {
+      "type": "IfcBuildingElementProxy",
+      "globalId": "6e779871-965f-4c83-a22f-9969c19db132",
+      "name": "P-1",
+      "description": "sample proxy",
+      "objectPlacement": {
+        "type": "IfcLocalPlacement",
+        "placementRelTo": {
+          "type": "IfcLocalPlacement",
+          "relativePlacement": {
+            "type": "IfcAxis2Placement3D",
+            "location": {
+              "type": "IfcCartesianPoint",
+              "coordinates": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "relativePlacement": {
+          "type": "IfcAxis2Placement3D",
+          "location": {
+            "type": "IfcCartesianPoint",
+            "coordinates": [
+              1000.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "representation": {
+        "type": "IfcProductDefinitionShape",
+        "representations": [
+          {
+            "type": "IfcShapeRepresentation",
+            "ref": "a38a8e1c-2cda-425b-8b1d-05d6bb5e06f0"
+          }
+        ]
+      },
+      "containedInStructure": [
+        {
+          "type": "IfcRelContainedInSpatialStructure",
+          "ref": "9dc7b8ee-7617-4022-8378-5b8ade78f5fc"
+        }
+      ]
+    },
+    {
+      "type": "IfcShapeRepresentation",
+      "contextOfItems": {
+        "type": "IfcGeometricRepresentationSubContext",
+        "ref": "0e021db0-8edf-475d-b742-1d2e8bbbd72d"
+      },
+      "representationIdentifier": "Body",
+      "representationType": "SweptSolid",
+      "items": [
+        {
+          "type": "IfcExtrudedAreaSolid",
+          "sweptArea": {
+            "type": "IfcRectangleProfileDef",
+            "profileType": "AREA",
+            "profileName": "1m x 1m rectangle",
+            "xDim": 1000.0,
+            "yDim": 1000.0
+          },
+          "extrudedDirection": {
+            "type": "IfcDirection",
+            "directionRatios": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "depth": 2000.0
+        }
+      ],
+      "ofProductRepresentation": [
+        {
+          "type": "IfcProductDefinitionShape",
+          "representations": [
+            {
+              "type": "IfcShapeRepresentation",
+              "ref": "a38a8e1c-2cda-425b-8b1d-05d6bb5e06f0"
+            }
+          ]
+        }
+      ],
+      "globalId": "a38a8e1c-2cda-425b-8b1d-05d6bb5e06f0"
+    },
+    {
+      "type": "IfcOwnerHistory",
+      "owningUser": {
+        "type": "IfcPersonAndOrganization",
+        "thePerson": {
+          "type": "IfcPerson",
+          "familyName": "Liebich",
+          "givenName": "Thomas"
+        },
+        "theOrganization": {
+          "type": "IfcOrganization",
+          "name": "buildingSMART International"
+        }
+      },
+      "owningApplication": {
+        "type": "IfcApplication",
+        "applicationDeveloper": {
+          "type": "IfcOrganization",
+          "name": "buildingSMART International"
+        },
+        "version": "1.0",
+        "applicationFullName": "IFC text editor",
+        "applicationIdentifier": "ifcTE"
+      },
+      "changeAction": "ADDED",
+      "lastModifiedDate": 1320688800,
+      "creationDate": 1320688800,
+      "globalId": "e8b4fadc-0538-4856-8f80-53325a16f938"
+    },
+    {
+      "type": "IfcGeometricRepresentationContext",
+      "contextType": "Model",
+      "coordinateSpaceDimension": 3,
+      "precision": 1e-05,
+      "worldCoordinateSystem": {
+        "type": "IfcAxis2Placement3D",
+        "location": {
+          "type": "IfcCartesianPoint",
+          "coordinates": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "hasSubContexts": [
+        {
+          "type": "IfcGeometricRepresentationSubContext",
+          "ref": "0e021db0-8edf-475d-b742-1d2e8bbbd72d"
+        }
+      ],
+      "globalId": "63e93211-9574-40a5-a0f6-4ccd27ab1bce"
+    },
+    {
+      "type": "IfcGeometricRepresentationSubContext",
+      "contextIdentifier": "Body",
+      "contextType": "Model",
+      "parentContext": {
+        "type": "IfcGeometricRepresentationContext",
+        "ref": "63e93211-9574-40a5-a0f6-4ccd27ab1bce"
+      },
+      "targetView": "MODEL_VIEW",
+      "representationsInContext": [
+        {
+          "type": "IfcShapeRepresentation",
+          "ref": "a38a8e1c-2cda-425b-8b1d-05d6bb5e06f0"
+        }
+      ],
+      "globalId": "0e021db0-8edf-475d-b742-1d2e8bbbd72d"
+    },
+    {
+      "type": "IfcRelAggregates",
+      "globalId": "a22f491f-f885-4116-8813-24d281d90c1d",
+      "relatingObject": {
+        "type": "IfcProject",
+        "ref": "3b7266e8-127d-4e31-a10d-59cd1eb671a7"
+      },
+      "relatedObjects": [
+        {
+          "type": "IfcBuilding",
+          "ref": "8f323372-d7b4-4d74-85d2-001ba786c219"
+        }
+      ]
+    },
+    {
+      "type": "IfcRelContainedInSpatialStructure",
+      "globalId": "9dc7b8ee-7617-4022-8378-5b8ade78f5fc",
+      "name": "Physical model",
+      "relatedElements": [
+        {
+          "type": "IfcBuildingElementProxy",
+          "ref": "6e779871-965f-4c83-a22f-9969c19db132"
+        }
+      ],
+      "relatingStructure": {
+        "type": "IfcBuilding",
+        "ref": "8f323372-d7b4-4d74-85d2-001ba786c219"
+      }
+    }
+  ]
+}
